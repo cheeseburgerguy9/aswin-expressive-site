@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f4ee" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0f1118" media="(prefers-color-scheme: dark)" />
+  <meta name="description" content="Aswin A.S. Kurup — in between clinical signs and logcats." />
+  <title>Aswin A.S. Kurup — In between clinical signs and logcats.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,400..800&family=Roboto+Flex:opsz,wght@8..144,350..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="platform-transition" id="platformTransition" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="ambient ambient-c" aria-hidden="true"></div>
+
+  <header class="topbar shell">
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#socials">Socials</a>
+    </nav>
+    <div class="top-actions">
+      <div class="platform-switch" id="platformSwitch" role="group" aria-label="Visual platform style">
+        <button class="platform-option active" id="androidMode" type="button" aria-pressed="true" title="Android style">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 8.3 5.5 5.5M16.8 8.3l1.7-2.8M5.2 9.2h13.6v7.1a2.7 2.7 0 0 1-2.7 2.7H7.9a2.7 2.7 0 0 1-2.7-2.7V9.2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="12.8" r=".9" fill="currentColor"/><circle cx="15" cy="12.8" r=".9" fill="currentColor"/></svg><span>Android</span>
+        </button>
+        <button class="platform-option" id="iosMode" type="button" aria-pressed="false" title="iOS Liquid Glass style">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.7 12.5c0-2.1 1.7-3.1 1.8-3.2-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.4.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.2-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.6 2.2 2.8 2.1 1.1 0 1.6-.7 3-.7s1.8.7 3 .7c1.2 0 2-.9 2.7-2.1.9-1.3 1.3-2.7 1.3-2.8-.1 0-2.4-.9-2.4-3.5Z" fill="currentColor"/><path d="M14.7 6.2c.6-.8 1-1.8.9-2.8-.9 0-2 .6-2.7 1.4-.6.7-1 1.7-.9 2.7 1 .1 2-.5 2.7-1.3Z" fill="currentColor"/></svg><span>iOS</span>
+        </button>
+      </div>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Switch theme" title="Switch theme"><span id="themeIcon" aria-hidden="true">☼</span></button>
+      <button class="icon-button mobile-menu-button" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="app" class="shell">
+    <section id="home" class="page home-page active" aria-labelledby="home-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Hello, I'm</span>
+          <h1 id="home-title">Aswin A.S. Kurup</h1>
+          <p class="hero-tagline">In between clinical signs and logcats.</p>
+          <div class="chips">
+            <span class="chip"><span aria-hidden="true">✦</span> MBBS</span>
+            <span class="chip"><span aria-hidden="true">⌖</span> Kerala, India</span>
+          </div>
+        </div>
+        <div class="portrait-wrap" aria-label="Portrait placeholder">
+          <div class="portrait-orbit orbit-1"></div>
+          <div class="portrait-orbit orbit-2"></div>
+          <div class="portrait">
+            <img src="/profile.jpg" alt="Aswin A.S. Kurup" />
+          </div>
+          <span class="scribble">Better<br />things<br />ahead ↗</span>
+        </div>
+      </div>
+
+
+
+      <div class="card-grid home-cards">
+        <a class="expressive-card card-about" href="#about">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 16.2c.8-2.4 2.4-3.7 3.8-3.7s3 1.3 3.8 3.7M9.4 9.5a2.6 2.6 0 1 0 5.2 0 2.6 2.6 0 0 0-5.2 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <div><h2>About</h2><p>Who I am, my journey, and what makes me, me.</p></div>
+          <span class="card-arrow">→</span>
+        </a>
+        <a class="expressive-card card-socials" href="#socials">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M8 16 16 8M10 8h6v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 5.5h12.5V19H6a1.5 1.5 0 0 1-1.5-1.5V7A1.5 1.5 0 0 1 6 5.5Z" stroke="currentColor" stroke-width="1.7"/></svg></span>
+          <div><h2>Socials</h2><p>Connect with me across platforms.</p></div>
+          <span class="card-arrow">→</span>
+        </a>
+        <button class="expressive-card card-private" id="privateCard" type="button">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="10" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7.8a4 4 0 0 1 8 0V10M12 14v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <div><h2>Self Hosted</h2><p>A small corner of my personal server.</p></div>
+          <span class="card-arrow">→</span>
+        </button>
+        <a class="expressive-card card-devices compact-card" href="#devices">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3.5" width="10" height="17" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M10 6h4M11 17.5h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <div><h2>My Devices</h2><p>What I'm using, and what came before.</p></div>
+          <span class="card-arrow">→</span>
+        </a>
+        <a class="expressive-card card-works compact-card" href="#works">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 6.5h14v12H5z" stroke="currentColor" stroke-width="1.8"/><path d="M8 4.5h8M8 10h8M8 14h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+          <div><h2>My Works</h2><p>Android projects, ROM work, and experiments.</p></div>
+          <span class="card-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="page detail-page" aria-labelledby="about-title">
+      <div class="detail-layout">
+        <aside class="side-nav">
+          <a href="#home">← Back</a>
+          <a class="active" href="#about">About</a>
+          <a href="#socials">Socials</a>
+          <button id="privateSideButton" type="button">Self Hosted</button>
+        </aside>
+        <article class="detail-content">
+          <span class="eyebrow">A little context</span>
+          <h1 id="about-title">About Me</h1>
+          <p class="lead">In between clinical signs and logcats.</p>
+          <div class="story">
+            <p>I'm <strong>Aswin A.S. Kurup</strong>, a medicine graduate from Kerala, India, and an alumnus of <strong>V.I. Vernadsky Crimean Federal University</strong>.</p>
+            <p>Medicine may have been my degree, but technology — especially Android — has been a constant part of my life.</p>
+            <h2>The Android rabbit hole</h2>
+            <p>My journey started with my first Android phone, the <strong>Lenovo Z2 Plus</strong>. I quickly fell down the custom ROM rabbit hole: flashing ROMs, experimenting with different setups, following the Android development community, and eventually wondering what actually went on behind the builds I was installing.</p>
+            <p>That curiosity eventually turned into building ROMs myself.</p>
+            <p>Over time, I made builds for devices including the <strong>Lenovo Vibe K5, Redmi 4X, and Lenovo Z2 Plus</strong>. After getting a <strong>OnePlus Nord</strong>, I started contributing as a ROM source developer for <a href="https://github.com/pixysos" target="_blank" rel="noreferrer">PixysOS</a>.</p>
+            <p>Later, with the <strong>Nothing Phone (1)</strong> and <strong>Pixel 4 XL</strong>, I went deeper into Android development and started working with device sources as well.</p>
+            <p>That period was probably the point where Android stopped being just a hobby of flashing things and became something I genuinely enjoyed building.</p>
+            <p>Eventually, though, final-year medicine had other plans. As university got closer to its end, free time became increasingly scarce, and PixysOS eventually ceased to exist.</p>
+            <p>I started an experimental Android project called <a href="https://github.com/Project-Mica" target="_blank" rel="noreferrer">MicaOS</a> — an attempt to explore ideas around the platform and build something of my own.</p>
+            <p>Unfortunately, the same problem caught up with it too: there is only so much time left after medicine, life, and everything else. MicaOS was eventually discontinued, but the experimentation never really stopped.</p>
+            <p>With the direction of AOSP changing, Google's policy changes, and the increasingly complicated world of Play Integrity, the Android ecosystem isn't quite the same playground it used to be.</p>
+            <p>So these days, I'm happily daily-driving a <strong>bootloader-locked Vivo X200 Pro</strong> alongside an <strong>unlocked Pixel 7 Pro</strong>.</p>
+            <p>One is for getting things done.</p>
+            <p>The other is there just in case I get bored.</p>
+            <p>And knowing me, I probably will.</p>
+            <div class="quote-block">Medicine and technology might seem like two completely different worlds.<br /><strong>Somewhere between clinical signs and logcats, that's where I ended up.</strong></div>
+            <div class="archive-links">
+              <h2>Some of my older Android work is still around.</h2>
+              <a href="https://forum.xda-developers.com/m/aswin_a_s.8499818/" target="_blank" rel="noreferrer"><span>XDA</span><small>My old development threads and releases →</small></a>
+              <a href="https://github.com/aswin7469" target="_blank" rel="noreferrer"><span>GitHub</span><small>Source code, experiments, and projects →</small></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="devices" class="page detail-page" aria-labelledby="devices-title">
+      <div class="detail-layout">
+        <aside class="side-nav">
+          <a href="#home">← Back</a><a href="#about">About</a><a href="#socials">Socials</a>
+          <a class="active" href="#devices">My Devices</a><a href="#works">My Works</a>
+          <button id="privateSideButtonDevices" type="button">Self Hosted</button>
+        </aside>
+        <article class="detail-content devices-content">
+          <span class="eyebrow">A little hardware history</span>
+          <h1 id="devices-title">My Devices</h1>
+          <p class="lead">The devices I use today, followed by the ones that shaped the journey.</p>
+          <div class="device-list">
+            <div class="device-row active-device"><div class="device-mark">P7P</div><div><strong>Pixel 7 Pro</strong><small>Active</small></div><span class="device-status">Active</span></div>
+            <div class="device-row active-device"><div class="device-mark">X200</div><div><strong>vivo X200 Pro CN</strong><small>Active</small></div><span class="device-status">Active</span></div>
+            <div class="device-row active-device"><div class="device-mark">iPad</div><div><strong>iPad Pro 2021</strong><small>Active</small></div><span class="device-status">Active</span></div>
+            <div class="device-row deprecated"><div class="device-mark">N1</div><div><strong>Nothing Phone (1)</strong><small>Deprecated</small></div><span class="device-status">Deprecated</span></div>
+            <div class="device-row deprecated"><div class="device-mark">P4XL</div><div><strong>Google Pixel 4 / 4 XL</strong><small>Deprecated</small></div><span class="device-status">Deprecated</span></div>
+            <div class="device-row deprecated"><div class="device-mark">Nord</div><div><strong>OnePlus Nord</strong><small>Deprecated</small></div><span class="device-status">Deprecated</span></div>
+            <div class="device-row deprecated"><div class="device-mark">Z2</div><div><strong>Lenovo ZUK Z2 Plus</strong><small>Deprecated</small></div><span class="device-status">Deprecated</span></div>
+            <div class="device-row deprecated"><div class="device-mark">4X</div><div><strong>Redmi 4X</strong><small>Deprecated</small></div><span class="device-status">Deprecated</span></div>
+            <div class="device-row deprecated"><div class="device-mark">K5</div><div><strong>Lenovo Vibe K5</strong><small>Deprecated</small></div><span class="device-status">Deprecated</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="works" class="page detail-page" aria-labelledby="works-title">
+      <div class="detail-layout">
+        <aside class="side-nav">
+          <a href="#home">← Back</a><a href="#about">About</a><a href="#socials">Socials</a>
+          <a href="#devices">My Devices</a><a class="active" href="#works">My Works</a>
+          <button id="privateSideButtonWorks" type="button">Self Hosted</button>
+        </aside>
+        <article class="detail-content works-content">
+          <span class="eyebrow">Things I've built</span>
+          <h1 id="works-title">My Works</h1>
+          <p class="lead">Tap a device to reveal the ROMs and Android versions. Tap a project to open the original post.</p>
+          <div class="work-device-list">
+            <details class="work-device" open>
+              <summary><span class="work-device-name">Nothing Phone (1)</span><span class="work-device-codename">Spacewar</span><span class="work-chevron">⌄</span></summary>
+              <div class="work-expanded">
+                <div class="work-image-placeholder" aria-hidden="true"><svg viewBox="0 0 64 96" role="presentation"><rect x="8" y="3" width="48" height="90" rx="9" fill="none" stroke="currentColor" stroke-width="3"/><rect x="13" y="10" width="38" height="72" rx="4" fill="currentColor" opacity=".08"/><circle cx="32" cy="87" r="2.5" fill="currentColor"/></svg></div>
+                <div class="work-projects">
+                  <a href="https://forum.xda-developers.com/t/pixysos-v6-0-beta-3-for-nothing-phone-1-android-13.4511025/" target="_blank" rel="noreferrer"><strong>PixysOS</strong><span>Android 13</span><b>↗</b></a>
+                  <a href="https://xdaforums.com/t/pixysos-v7-3-3-for-nothing-phone-1-android-14-qpr3.4637640/" target="_blank" rel="noreferrer"><strong>PixysOS</strong><span>Android 14</span><b>↗</b></a>
+                  <a href="https://t.me/aswinaskurup/663" target="_blank" rel="noreferrer"><strong>AOSP</strong><span>Android 15</span><b>↗</b></a>
+                  <a href="https://t.me/aswinaskurup/787" target="_blank" rel="noreferrer"><strong>MicaOS</strong><span>Android 16</span><b>↗</b></a>
+                </div>
+              </div>
+            </details>
+            <details class="work-device">
+              <summary><span class="work-device-name">Google Pixel 4 / 4 XL</span><span class="work-device-codename">coral / flame</span><span class="work-chevron">⌄</span></summary>
+              <div class="work-expanded">
+                <div class="work-image-placeholder" aria-hidden="true"><svg viewBox="0 0 64 96" role="presentation"><rect x="8" y="3" width="48" height="90" rx="9" fill="none" stroke="currentColor" stroke-width="3"/><rect x="13" y="10" width="38" height="72" rx="4" fill="currentColor" opacity=".08"/><circle cx="32" cy="87" r="2.5" fill="currentColor"/></svg></div>
+                <div class="work-projects">
+                  <a href="https://forum.xda-developers.com/t/rom-official-pixysos-v6-3-3-for-pixel-4-4-xl-android-13-qpr3.4618523/#post-88918887" target="_blank" rel="noreferrer"><strong>PixysOS</strong><span>Android 13</span><b>↗</b></a>
+                  <a href="https://xdaforums.com/t/pixysos-v7-3-3-for-pixel-4-xl-android-14-qpr3-motion-sense.4639899/" target="_blank" rel="noreferrer"><strong>PixysOS</strong><span>Android 14</span><b>↗</b></a>
+                </div>
+              </div>
+            </details>
+            <details class="work-device">
+              <summary><span class="work-device-name">OnePlus Nord</span><span class="work-device-codename">avicii</span><span class="work-chevron">⌄</span></summary>
+              <div class="work-expanded">
+                <div class="work-image-placeholder" aria-hidden="true"><svg viewBox="0 0 64 96" role="presentation"><rect x="8" y="3" width="48" height="90" rx="9" fill="none" stroke="currentColor" stroke-width="3"/><rect x="13" y="10" width="38" height="72" rx="4" fill="currentColor" opacity=".08"/><circle cx="32" cy="87" r="2.5" fill="currentColor"/></svg></div>
+                <div class="work-projects">
+                  <a href="https://forum.xda-developers.com/t/rom-android-11-avicii-pixysos-aosp-2021-02-04-official.4151127/" target="_blank" rel="noreferrer"><strong>PixysOS</strong><span>Android 11</span><b>↗</b></a>
+                  <a href="https://forum.xda-developers.com/t/rom-pixysos-v5-1-7-for-oneplus-nord-avicii-android-12l-stable-official.4354451/unread" target="_blank" rel="noreferrer"><strong>PixysOS</strong><span>Android 12</span><b>↗</b></a>
+                </div>
+              </div>
+            </details>
+            <details class="work-device">
+              <summary><span class="work-device-name">Lenovo ZUK Z2 Plus</span><span class="work-device-codename">z2_plus</span><span class="work-chevron">⌄</span></summary>
+              <div class="work-expanded">
+                <div class="work-image-placeholder" aria-hidden="true"><svg viewBox="0 0 64 96" role="presentation"><rect x="8" y="3" width="48" height="90" rx="9" fill="none" stroke="currentColor" stroke-width="3"/><rect x="13" y="10" width="38" height="72" rx="4" fill="currentColor" opacity=".08"/><circle cx="32" cy="87" r="2.5" fill="currentColor"/></svg></div>
+                <div class="work-projects">
+                  <a href="https://forum.xda-developers.com/t/rom-9-0-r46-pixys-os-2-4-official-for-z2_plus-treble-4-4-kernel-enforcing.3854189/" target="_blank" rel="noreferrer"><strong>PixysOS</strong><span>Android 9.0</span><b>↗</b></a>
+                  <a href="https://forum.xda-developers.com/t/rom-pixysos-v3-1-3-10-official-16-09-20-z2_plus.4011587/" target="_blank" rel="noreferrer"><strong>PixysOS</strong><span>Android 10</span><b>↗</b></a>
+                  <a href="https://forum.xda-developers.com/t/pixysos-v4-0-5-official-r-android-11-0-for-zuk-z2-plus.4167355/" target="_blank" rel="noreferrer"><strong>PixysOS</strong><span>Android 11</span><b>↗</b></a>
+                </div>
+              </div>
+            </details>
+            <details class="work-device">
+              <summary><span class="work-device-name">Redmi 4X</span><span class="work-device-codename">santoni</span><span class="work-chevron">⌄</span></summary>
+              <div class="work-expanded">
+                <div class="work-image-placeholder" aria-hidden="true"><svg viewBox="0 0 64 96" role="presentation"><rect x="8" y="3" width="48" height="90" rx="9" fill="none" stroke="currentColor" stroke-width="3"/><rect x="13" y="10" width="38" height="72" rx="4" fill="currentColor" opacity=".08"/><circle cx="32" cy="87" r="2.5" fill="currentColor"/></svg></div>
+                <div class="work-projects">
+                  <a href="https://forum.xda-developers.com/t/9-0-official-resurrection-remix-v7-0-santoni.3892967/" target="_blank" rel="noreferrer"><strong>Resurrection Remix</strong><span>Android 9</span><b>↗</b></a>
+                </div>
+              </div>
+            </details>
+            <details class="work-device">
+              <summary><span class="work-device-name">Lenovo Vibe K5</span><span class="work-device-codename">A6020</span><span class="work-chevron">⌄</span></summary>
+              <div class="work-expanded">
+                <div class="work-image-placeholder" aria-hidden="true"><svg viewBox="0 0 64 96" role="presentation"><rect x="8" y="3" width="48" height="90" rx="9" fill="none" stroke="currentColor" stroke-width="3"/><rect x="13" y="10" width="38" height="72" rx="4" fill="currentColor" opacity=".08"/><circle cx="32" cy="87" r="2.5" fill="currentColor"/></svg></div>
+                <div class="work-projects">
+                  <a href="https://forum.xda-developers.com/t/rom-pixel-experience-official-8-1-0r50-06-11-2018-a6020-lenovo-k5-k5-plus.3833198/" target="_blank" rel="noreferrer"><strong>Pixel Experience</strong><span>Android 8.1</span><b>↗</b></a>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="self-hosted" class="page detail-page" aria-labelledby="self-hosted-title">
+      <div class="detail-layout">
+        <aside class="side-nav">
+          <a href="#home">← Back</a>
+          <a href="#about">About</a>
+          <a href="#socials">Socials</a>
+          <button class="active" id="privateSideButton3" type="button">Self Hosted</button>
+        </aside>
+        <article class="detail-content self-hosted-content">
+          <span class="eyebrow">My little server corner</span>
+          <h1 id="self-hosted-title">Self Hosted</h1>
+          <p class="lead">Private projects and services I run myself.</p>
+          <div id="projectList" class="social-list project-list" aria-live="polite"></div>
+          <p id="projectEmpty" class="project-empty" hidden>No projects are available yet.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="socials" class="page detail-page" aria-labelledby="socials-title">
+      <div class="detail-layout">
+        <aside class="side-nav">
+          <a href="#home">← Back</a>
+          <a href="#about">About</a>
+          <a class="active" href="#socials">Socials</a>
+          <button id="privateSideButton2" type="button">Self Hosted</button>
+        </aside>
+        <article class="detail-content socials-content">
+          <span class="eyebrow">Find me around the internet</span>
+          <h1 id="socials-title">My Socials</h1>
+          <p class="lead">The rest of my links, all in one place.</p>
+          <div class="social-section">
+            <span class="section-label">Channel</span>
+            <div class="social-list">
+              <a href="https://t.me/aswinaskurup" target="_blank" rel="noreferrer"><span class="social-avatar brand-telegram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.4 3.7 18.2 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L5.7 14 1 12.5c-1-.3-1-1 .2-1.5L19.6 3.8c.9-.3 2-.1 1.8-.1Z"/></svg></span><span><strong>Telegram Channel</strong><small>@aswinaskurup</small></span><span>↗</span></a>
+            </div>
+          </div>
+          <div class="social-section">
+            <span class="section-label">Socials</span>
+            <div class="social-list">
+            <a href="https://twitter.com/aswin_a_s__" target="_blank" rel="noreferrer"><span class="social-avatar brand-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.4l-5.02-6.55L6.05 22H2.9l7.24-8.28L2.2 2h6.56l4.54 5.97L18.9 2Zm-1.12 17.92h1.72L7.68 3.95H5.83L17.78 19.92Z"/></svg></span><span><strong>X (Twitter)</strong><small>@aswin_a_s__</small></span><span>↗</span></a>
+            <a href="https://instagram.com/aswin_a_s__" target="_blank" rel="noreferrer"><span class="social-avatar brand-instagram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3.1" y="3.1" width="17.8" height="17.8" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.1" stroke="currentColor" stroke-width="2"/><circle cx="17.55" cy="6.55" r="1.15" fill="currentColor"/></svg></span><span><strong>Instagram</strong><small>@aswin_a_s__</small></span><span>↗</span></a>
+            <a href="https://t.me/aswin_a_s" target="_blank" rel="noreferrer"><span class="social-avatar brand-telegram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.4 3.7 18.2 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L5.7 14 1 12.5c-1-.3-1-1 .2-1.5L19.6 3.8c.9-.3 2-.1 1.8-.1Z"/></svg></span><span><strong>Telegram</strong><small>@aswin_a_s</small></span><span>↗</span></a>
+            <a href="https://forum.xda-developers.com/m/aswin_a_s.8499818/" target="_blank" rel="noreferrer"><span class="social-avatar brand-xda" aria-hidden="true"><span>XDA</span></span><span><strong>XDA</strong><small>aswin_a_s</small></span><span>↗</span></a>
+            <a href="https://github.com/aswin7469" target="_blank" rel="noreferrer"><span class="social-avatar brand-github" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.4a9.6 9.6 0 0 0-3.04 18.71c.48.09.66-.21.66-.46v-1.64c-2.68.58-3.25-1.14-3.25-1.14-.44-1.12-1.07-1.42-1.07-1.42-.87-.6.07-.59.07-.59.96.07 1.46.99 1.46.99.86 1.46 2.26 1.04 2.81.8.09-.63.34-1.04.62-1.28-2.14-.24-4.39-1.07-4.39-4.76 0-1.05.38-1.9 1-2.57-.1-.24-.43-1.22.1-2.54 0 0 .81-.26 2.64.98a9.13 9.13 0 0 1 4.8 0c1.83-1.24 2.64-.98 2.64-.98.53 1.32.2 2.3.1 2.54.62.67 1 1.52 1 2.57 0 3.7-2.26 4.51-4.41 4.75.35.3.66.88.66 1.77v2.63c0 .25.17.55.67.46A9.6 9.6 0 0 0 12 2.4Z"/></svg></span><span><strong>GitHub</strong><small>@aswin7469</small></span><span>↗</span></a>
+          </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="privateDialog" class="private-dialog">
+    <div class="dialog-shape">
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="Close">×</button>
+      <div class="lock-mark">⌑</div>
+      <span class="eyebrow">Private corner</span>
+      <h2>Self Hosted</h2>
+      <p>Enter the password to continue.</p>
+      <form id="loginForm">
+        <label class="password-field"><span class="sr-only">Password</span><input id="passwordInput" type="password" autocomplete="current-password" placeholder="Enter password" required /><button id="showPassword" type="button" aria-label="Show password">◉</button></label>
+        <button class="primary-button" type="submit">Continue <span>→</span></button>
+        <p id="loginMessage" class="login-message" role="status"></p>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
